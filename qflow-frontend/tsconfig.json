@@ -1,0 +1,38 @@
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"strict": true,
+		"jsx": "preserve",
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		"baseUrl": ".",
+		"rootDirs": [
+			".",
+			"../@n8n/rest-api-client/src",
+			"../@n8n/composables/src",
+			"../@n8n/chat/src",
+			"../@n8n/design-system/src"
+		],
+		"outDir": "dist",
+		"paths": {
+			"@/*": ["./src/*"],
+			"@n8n/rest-api-client*": ["../@n8n/rest-api-client/src*"],
+			"@n8n/composables*": ["../@n8n/composables/src*"],
+			"@n8n/constants*": ["../../@n8n/constants/src*"],
+			"@n8n/chat*": ["../@n8n/chat/src*"],
+			"@n8n/design-system*": ["../@n8n/design-system/src*"],
+			"@n8n/i18n*": ["../@n8n/i18n/src*"],
+			"@n8n/stores*": ["../@n8n/stores/src*"],
+			"@n8n/api-types*": ["../../@n8n/api-types/src*"],
+			"@n8n/utils*": ["../../@n8n/utils/src*"]
+		},
+		"useUnknownInCatchVariables": false
+	},
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"],
+	"exclude": ["src/plugins/codemirror/typescript/worker/**/*.d.ts"]
+}
